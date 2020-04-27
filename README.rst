@@ -2,6 +2,8 @@
 Django Filer
 ============
 
+IMPORTANT: This is a custom port. DO NOT use.
+
 |pypi| |build| |coverage|
 
 **django Filer** is a file management application for django that makes
