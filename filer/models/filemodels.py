@@ -13,6 +13,7 @@ from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 
 from six import python_2_unicode_compatible
+from taggit.managers import TaggableManager
 
 from .. import settings as filer_settings
 from ..fields.multistorage_file import MultiStorageFileField
@@ -91,6 +92,8 @@ class File(PolymorphicModel, mixins.IconsMixin):
         help_text=_('Disable any permission checking for this '
                     'file. File will be publicly accessible '
                     'to anyone.'))
+
+    tags = TaggableManager(blank=True)
 
     objects = FileManager()
 

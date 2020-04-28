@@ -98,9 +98,9 @@ class ImageAdmin(FileAdmin):
 
 
 if FILER_IMAGE_MODEL == 'filer.Image':
-    extra_main_fields = ('author', 'default_alt_text', 'default_caption',)
+    extra_main_fields = ('author', 'default_alt_text', 'default_caption', 'tags')
 else:
-    extra_main_fields = ('default_alt_text', 'default_caption',)
+    extra_main_fields = ('default_alt_text', 'default_caption', 'tags')
 
 ImageAdmin.fieldsets = ImageAdmin.build_fieldsets(
     extra_main_fields=extra_main_fields,
