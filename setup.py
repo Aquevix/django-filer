@@ -11,6 +11,7 @@ REQUIREMENTS = [
     'django_polymorphic>=0.7,<2.2',
     'easy-thumbnails>=2,<3.0',
     'Unidecode>=0.04,<1.2',
+    'django-taggit>=1.1.0',
     'six',
 ]
 
@@ -45,13 +46,13 @@ CLASSIFIERS = [
 
 
 setup(
-    name='django-filer',
+    name='django-filer-tagged',
     version=__version__,
-    author='Divio AG',
-    author_email='info@divio.ch',
-    url='http://github.com/divio/django-filer',
+    author='Aquevix, Divio AG',
+    author_email='info@aquevix.com',
+    url='https://github.com/Aquevix/django-filer-tagged',
     license='BSD',
-    description='A file management application for django that makes handling '
+    description='Custom port of django-filer: A file management application for django that makes handling '
                 'of files and images a breeze.',
     long_description=open('README.rst').read(),
     packages=find_packages(exclude=['tests']),
